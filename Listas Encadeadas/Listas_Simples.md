@@ -1,15 +1,16 @@
-# Listas Encadeadas Simples
-Conceito
+<h1 align="center"> 
+   Listas Encadeadas Simples
+</h1>
+
+# Conceito
 Uma lista encadeada simples é uma estrutura de dados onde cada elemento (nó) contém um valor e uma referência para o próximo nó.
 
 O último nó aponta para null, indicando o fim da lista.
 
 As operações básicas incluem: inserção, exclusão, busca e contagem de elementos.
 
-Operações Básicas
-1. Inserção no Início
-csharp
-Copy
+# Operações Básicas
+## 1. Inserção no Início
 ```csharp
 void insereInicio(Node novo)
 {
@@ -23,10 +24,12 @@ void insereInicio(Node novo)
     }
 }
 ```
-Explicação: Insere um novo nó no início da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
+## Explicação: 
+- Insere um novo nó no início da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
 
-2. Inserção no Fim
-csharp
+***
+
+## 2. Inserção no Fim
 ```csharp
 void insereFim(Node novo)
 {
@@ -38,10 +41,12 @@ void insereFim(Node novo)
     this.ultimo = novo;
 }
 ```
-Explicação: Insere um novo nó no final da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
+Explicação: 
+- Insere um novo nó no final da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
 
-3. Inserção em Posição Específica
-csharp
+***
+
+## 3. Inserção em Posição Específica
 ```csharp
 void InserePosicao(Node novo, int pos)
 {
@@ -81,10 +86,13 @@ void InserePosicao(Node novo, int pos)
     }
 }
 ```
-Explicação: Insere um novo nó em uma posição específica. Se a posição for 0, insere no início. Se for maior que o tamanho da lista, insere no final.
+## Explicação: 
+- Insere um novo nó em uma posição específica. Se a posição for 0, insere no início. Se for maior que o tamanho da lista, insere no final.
 
-4. Exclusão de um Nó
-csharp
+***
+
+## 4. Exclusão de um Nó
+
 ```csharp
 void excluiNo(Object item)
 {
@@ -98,9 +106,12 @@ void excluiNo(Object item)
         ultimo = aux;
 }
 ```
-Explicação: Remove um nó da lista com base no valor do item. O nó anterior ao removido é atualizado para apontar para o próximo nó.
+## Explicação: 
+- Remove um nó da lista com base no valor do item. O nó anterior ao removido é atualizado para apontar para o próximo nó.
 
-5. Busca de um Nó
+***
+
+## 5. Busca de um Nó
 csharp
 ```csharp
 Node buscaNo(Object item)
@@ -119,9 +130,12 @@ Node buscaNo(Object item)
     return null;
 }
 ```
-Explicação: Percorre a lista para encontrar um nó com o valor especificado. Retorna o nó se encontrado, ou null caso contrário.
+##Explicação: 
+- Percorre a lista para encontrar um nó com o valor especificado. Retorna o nó se encontrado, ou null caso contrário.
 
-6. Contagem de Nós
+***
+
+## 6. Contagem de Nós
 csharp
 ```csharp
 public int contaNos()
@@ -136,4 +150,5 @@ public int contaNos()
     return tam;
 }
 ```
-Explicação: Retorna o número de nós na lista.
+## Explicação: 
+- Retorna o número de nós na lista.
