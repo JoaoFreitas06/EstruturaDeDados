@@ -1,4 +1,4 @@
-Listas Encadeadas Simples
+# Listas Encadeadas Simples
 Conceito
 Uma lista encadeada simples é uma estrutura de dados onde cada elemento (nó) contém um valor e uma referência para o próximo nó.
 
@@ -10,6 +10,7 @@ Operações Básicas
 1. Inserção no Início
 csharp
 Copy
+```csharp
 void insereInicio(Node novo)
 {
     if (this.primeiro != null)
@@ -21,11 +22,12 @@ void insereInicio(Node novo)
         this.ultimo = novo;
     }
 }
+```
 Explicação: Insere um novo nó no início da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
 
 2. Inserção no Fim
 csharp
-Copy
+```csharp
 void insereFim(Node novo)
 {
     novo.setProx(null);
@@ -35,11 +37,12 @@ void insereFim(Node novo)
         this.ultimo.setProx(novo);
     this.ultimo = novo;
 }
+```
 Explicação: Insere um novo nó no final da lista. Se a lista estiver vazia, o novo nó se torna o primeiro e o último.
 
 3. Inserção em Posição Específica
 csharp
-Copy
+```csharp
 void InserePosicao(Node novo, int pos)
 {
     Node aux = primeiro;
@@ -77,11 +80,12 @@ void InserePosicao(Node novo, int pos)
         }
     }
 }
+```
 Explicação: Insere um novo nó em uma posição específica. Se a posição for 0, insere no início. Se for maior que o tamanho da lista, insere no final.
 
 4. Exclusão de um Nó
 csharp
-Copy
+```csharp
 void excluiNo(Object item)
 {
     Node aux = primeiro;
@@ -93,11 +97,12 @@ void excluiNo(Object item)
     if (ultimo == aux.getProx())
         ultimo = aux;
 }
+```
 Explicação: Remove um nó da lista com base no valor do item. O nó anterior ao removido é atualizado para apontar para o próximo nó.
 
 5. Busca de um Nó
 csharp
-Copy
+```csharp
 Node buscaNo(Object item)
 {
     int i = 0;
@@ -113,11 +118,12 @@ Node buscaNo(Object item)
     }
     return null;
 }
+```
 Explicação: Percorre a lista para encontrar um nó com o valor especificado. Retorna o nó se encontrado, ou null caso contrário.
 
 6. Contagem de Nós
 csharp
-Copy
+```csharp
 public int contaNos()
 {
     int tam = 0;
@@ -129,4 +135,5 @@ public int contaNos()
     }
     return tam;
 }
+```
 Explicação: Retorna o número de nós na lista.
