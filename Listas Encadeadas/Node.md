@@ -1,11 +1,11 @@
-<h1 align="center"> 
+<h1 align="center">
    Listas Encadeadas com Nó (Node)
 </h1>
 
 ## Conceito:
-A lista encadeada com nó é implementada usando uma classe Node que representa cada elemento da lista.
+- A lista encadeada com nó é implementada usando uma classe Node que representa cada elemento da lista.
 
-Cada nó contém um valor (item) e uma referência para o próximo nó (prox).
+- Cada nó contém um valor (item) e uma referência para o próximo nó (prox).
 
 Classe Node
 ```csharp
